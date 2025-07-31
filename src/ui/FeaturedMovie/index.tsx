@@ -30,7 +30,7 @@ const FeaturedMovie = ({ filmId }: FeaturedMovieProps) => {
             <div className={styles.rightSide}>
                 <img src={`/assets/images/${data.CoverImage}`} alt="" width="100%" height="100%" />
                 {
-                    data.VideoUrl ? setTimeout(() => {
+                    data.VideoUrl ?
                         <video
                             src="https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4"
                             autoPlay
@@ -41,7 +41,6 @@ const FeaturedMovie = ({ filmId }: FeaturedMovieProps) => {
                             width="100%"
                             height="100%"
                             className={styles.video} />
-                    }, 2000)
                         : ""
                 }
             </div>
