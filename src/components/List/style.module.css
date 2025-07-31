@@ -1,0 +1,19 @@
+.container {
+    width: 100%;
+}
+
+.container>h2 {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.trendingNowContainer {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    margin-top: 30px;
+    gap: 0.5%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}

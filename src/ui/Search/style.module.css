@@ -1,0 +1,26 @@
+.container {
+    color: white;
+}
+
+.searchInp {
+    font-size: 0.8rem;
+    width: 14%;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(71, 71, 71);
+    margin: 14px 0;
+    transition: 0.3s;
+}
+
+.searchInp:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.315);
+    border-color: rgb(0, 104, 131);
+}
+
+@media screen and (max-width: 700px) {
+    .searchInp {
+        width: 40%;
+    }
+}

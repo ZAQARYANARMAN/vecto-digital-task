@@ -1,0 +1,43 @@
+.container {
+    width: 12%;
+    height: 100%;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.loveIcon {
+    cursor: pointer;
+    position: absolute;
+    right: 4px;
+    top: 10px;
+}
+
+@media screen and (max-width: 1180px) {
+    .container {
+        width: calc(96% / 6);
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .container {
+        width: calc(96% / 5);
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .container {
+        width: calc(96% / 4);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: calc(96% / 3);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        width: calc(96% / 2);
+    }
+}

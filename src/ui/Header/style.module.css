@@ -1,0 +1,110 @@
+.container {
+    background-color: black;
+    width: 7%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 24px;
+    padding-top: 13vh;
+    transition: 0.4s;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.container:hover {
+    width: 14%;
+    box-shadow: 70px 0 120px black, 300px 0 120px rgba(0, 0, 0, 0.477), 430px 0 120px rgba(0, 0, 0, 0.477);
+}
+
+.userInfoList {
+    width: 80%;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    padding: 8px 4px;
+    gap: 8px;
+    transition: 0.4s;
+}
+
+.userInfoList>img {
+    border-radius: 50%;
+}
+
+.userInfoList>h3 {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.container:hover .userInfoList {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menuListBlock {
+    width: max-content;
+    background-color: green;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.smallTitle {
+    color: white;
+    font-size: 0rem;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+.menuItem {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.menuItem:hover {
+    background-color: rgb(0, 104, 131);
+}
+
+.container:hover .smallTitle {
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.container:hover .menuItem {
+    justify-content: start;
+}
+
+.bottomContainer {
+    background-color: blue;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 0 24%;
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        width: 13%;
+    }
+
+    .container:hover {
+        width: 40%;
+        box-shadow: 70px 0 120px black, 300px 0 120px rgba(0, 0, 0, 0.477), 430px 0 120px rgba(0, 0, 0, 0.477);
+    }
+
+}
